@@ -1,0 +1,133 @@
+* {
+    border-radius: .5rem;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+}
+
+.moviePreview {
+    max-width: 13rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .4rem;
+    
+
+    &--info {
+        position: relative;
+        text-align: center;
+
+    }
+
+    & img {
+        max-width: 100%;
+        display: block;
+    }
+
+    &--name {
+        margin-top: 3rem;
+
+    }
+}
+
+.RatingDisplay {
+    display: inline-flex;
+}
+
+.ratingContainer {
+    padding: .5rem;
+    background-color: rgb(8, 28, 34);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    padding: .3rem;
+}
+
+.rating {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    background-color: rgb(8, 28, 34);
+    border: solid green 4px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+
+    &--img {
+
+    }
+    
+    &--movies {
+        display: flex;
+        background-color: rgb(8, 28, 34);
+        padding: 1rem 0;
+        border-radius: 0;
+        overflow: scroll;
+    }
+    
+    &--movie {
+        background-color: white;
+        margin: .5rem 1rem .5rem 0;
+        display: flex;
+        flex-direction: column;
+        border: solid white 3px;
+
+        &::after {
+            content: ""
+        }
+
+        &:hover::after {
+            content: "";
+            background-color: black;
+        }
+
+        &:first-child{
+            margin-left: .5rem;
+        }
+
+        &__info {
+            position: relative;
+            padding: 1.5rem .5rem;
+        }
+    }
+
+    &--info {
+        position: relative;
+        padding: 0rem .5rem;
+        margin-top: -1.25rem;
+    }
+
+    &--container {
+        
+    }
+
+    &--subcontainer {
+        
+    }
+
+    &--name {
+        margin: 1rem 0rem;
+        text-align: center;
+    }
+
+
+}
+
+.RatingDisplay {
+    position: absolute;
+    top: -50%;
+    transform: translateY(.82rem);
+
+}
